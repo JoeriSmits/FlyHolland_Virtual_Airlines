@@ -1,12 +1,12 @@
 /**
- * Created by Joeri Smits on 04/11/2014.
+ * Created by Joeri Smits on 06/11/2014.
  */
-/*jslint node: true, devel:true */
 "use strict";
 
-// Requiring the server object from app.js
-var http = require('../app');
+var app = require('../server'); //Require our app
 
-var server = http.listen(process.env.PORT || 3000, function () {
-    console.log('FlyHolland Virtual Airlines server listening on port ' + server.address().port);
+app.set('port', process.env.PORT || 3001);
+
+var server = app.listen(app.get('port'), function () {
+    console.log('FlyHolland server listening on port ' + server.address().port);
 });
