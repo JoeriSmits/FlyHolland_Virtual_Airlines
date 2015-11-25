@@ -1,3 +1,5 @@
+This repository is not supported anymore.
+
 # MIT License (MIT)
 
 Copyright (c) 2015 Joeri Smits
